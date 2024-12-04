@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de registro</title>
+</head>
+<body>
+<div class="form-container">
+    <h1>formulario de registro</h1>
+    <form>
+        <fieldset><Legend>INFORMACION PERSONAL</Legend>
+            <Label for="nombres">NOMBRE COMPLETO:</Label>
+            <input type="text" name="nombre" id="nombre"
+            placeholder="ingrese su nombre" required>
+            
+
+            <label for="apellidos">FECHA DE NACIMIENTO:</label>
+            <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+
+            <label for="genero">GENERO:</label>
+            <select name="genero" id="genero">
+                <option value="disabled select">selecciona tu genero</option>
+                <option value="masculino">MASCULINO</option>
+                <option value="femenino">FEMENINO</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>INFORMACION DE CONTACTO</legend>
+
+            <label for="telefono">TELEFONO:</label>
+            <input type="tel" id="telefono" name="telefono" maxlength="10" required>
+
+            <label for="ubicacion">UBICACION</label>
+            <select name="ciudad" id="ciudad" required>
+                <option value="disabled select">SELECIONA TU CIUDAD</option>
+                <option value="br">BARRANQUILLA</option>
+                <option value="st">SANTA MARTA </option>
+                <option value="mt">MOTERIA</option>
+                <option value="ct">CARTAGENA</option>
+                <option value="vl">VALLEDUPAR</option>
+            </select>
+
+            <label for="email">CORREO ELECTRONICO:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>seguridad</legend>
+
+            <label for="usuario">USUARIO</label>
+            <input type="usuario" id="usuario" name="usuario" placeholder="EJEMPLO2@GMAIL.COM" >
+
+            <label for="password"> CONTRASEÑA</label>
+            <input type="password" id="password" name="password" placeholder="Minimo 8 caracteres" minlength="8" required pattern="(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[\W_]).{8,}" title="La contraseña debe incluir al menos una mayúscula, una minúscula, un número y un carácter especial.">
+
+
+        </fieldset>
+            </form>
+</div>
+    
+</body>
+</html>
